@@ -1,0 +1,57 @@
+@import 'variables.scss';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+body{
+  background: $body-background;
+}
+*{
+  box-sizing: border-box;
+}
+.wrapper{
+  width: 100%;
+}
+.container{
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 0 50px;
+  @media (max-width: 500px) {
+    padding: 0 10px;    
+  }
+}
+
+
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 10px;
+    .logo {
+        height: 50px;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        img {
+            display: block;
+            height: 100%;
+            margin: auto;
+        }
+    }
+}
+
+h1 {
+    color: $text-grey-color;
+    border-bottom: 1px solid $text-grey-color;
+    margin: 20px 0 20px 0;
+    font-size: 18px;
+    padding: 5px 10px;
+    .shiftRight {
+        float: right;
+        line-height: 30px;
+        color: $dark-grey-color;
+        font-size: 12px;
+    }
+    .colored {
+        color: $primary-color;
+    }
+}
